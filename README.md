@@ -12,31 +12,6 @@ In particular, this repository is intended to host:
 
 ---
 
-## Method Overview
-
-PLAID-PRF performs pseudo-relevance feedback in four stages:
-
-1. **Initial retrieval**
-   - Run a first-pass PLAID search with the original query.
-   - Collect the top-`fp` pseudo-relevant passages.
-
-2. **Centroid usefulness scoring**
-   - Each feedback token is represented in the PLAID/ColBERTv2 index by a **centroid code** plus a **quantised residual**.
-   - PLAID-PRF counts centroid occurrences in the feedback set and scores them with a classical weighting model such as **TF-IDF**.
-   - This gives high scores to centroid codes that are frequent in the feedback documents but rare in the corpus.
-
-3. **Expansion embedding selection**
-   - The centroid-level weights are mapped back to the reconstructed token embeddings.
-   - A compact set of high-utility expansion embeddings is selected.
-   - To reduce redundancy, PLAID-PRF uses **MMR-style selection** rather than naive top-k selection.
-
-4. **Expanded-query retrieval**
-   - The selected expansion embeddings are appended to the original query representation with a scaling factor `beta`.
-   - PLAID is then rerun with the refined query representation.
-
-This design makes PLAID-PRF **training-free**, **codebook-aware**, and **quantisation-compatible**.
-
-
 ## Usage
 
 The result files in this repository can be evaluated with PyTerrier.
