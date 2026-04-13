@@ -58,7 +58,7 @@ If you use this repository, please cite the paper:
 }
 ```
 
-> Replace the citation entry with the final publication metadata once available.
+
 
 ---
 
@@ -68,4 +68,3 @@ If you use this repository, please cite the paper:
 - Code: `<code-link>`
 - Index artifacts / virtual appendix: `<artifact-link>`
 
-> Replace the placeholders above with the final public URLs when the repository is released.
