@@ -26,7 +26,7 @@ if not pt.started():
     pt.init()
 
 dataset = pt.get_dataset("irds:msmarco-passage/trec-dl-2019/judged")
-res = pt.io.read_results("results/TREC2019/plaid-prf.res.gz")
+res = pt.io.read_results("./plaid-prf/plaid-prf.dl19.res.gz")
 
 evalMeasuresDict = pt.Utils.evaluate(
     res,
