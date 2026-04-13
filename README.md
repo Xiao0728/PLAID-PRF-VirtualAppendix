@@ -31,7 +31,7 @@ res = pt.io.read_results("./plaid-prf/plaid-prf.dl19.res.gz")
 evalMeasuresDict = pt.Utils.evaluate(
     res,
     dataset.get_qrels(),
-    metrics=[AP(rel=2)@1000, nDCG@10, RR(rel=2)@10]
+    metrics=[AP(rel=2)@1000, nDCG@10, RR(rel=2)@10, R(rel=2)@1000 ]
 )
 
 print(evalMeasuresDict)
