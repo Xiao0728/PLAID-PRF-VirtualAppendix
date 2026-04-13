@@ -36,31 +36,6 @@ PLAID-PRF performs pseudo-relevance feedback in four stages:
 
 This design makes PLAID-PRF **training-free**, **codebook-aware**, and **quantisation-compatible**.
 
----
-
-## Repository Structure
-
-A suggested layout for this repository is:
-
-```text
-.
-├── README.md
-├── results/
-│   ├── TREC2019/
-│   ├── TREC2020/
-│   ├── DL-HARD/
-│   └── BEIR/
-├── scripts/
-│   ├── evaluate_runs.py
-│   ├── reproduce_main_tables.py
-│   └── export_results.sh
-├── artifacts/
-│   ├── indices
-└── docs/
-    └── paper_links.md
-```
-
----
 
 ## Usage
 
