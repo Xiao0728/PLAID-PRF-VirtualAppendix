@@ -39,8 +39,6 @@ print(evalMeasuresDict)
 
 For TREC DL 2020 or other collections, replace the dataset identifier and run file path accordingly.
 
----
-
 
 
 ---
