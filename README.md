@@ -23,12 +23,12 @@ from pyterrier.measures import *
 import pyterrier as pt
 
 if not pt.started():
-    pt.init()
+    pt.java.init()
 
 dataset = pt.get_dataset("irds:msmarco-passage/trec-dl-2019/judged")
-res = pt.io.read_results("./plaid-prf/plaid-prf.dl19.res.gz")
+res = pt.io.read_results("./PLAID-PRF/plaid_prf.dl19.res.gz")
 
-evalMeasuresDict = pt.Utils.evaluate(
+evalMeasuresDict = pt.Evaluate(
     res,
     dataset.get_qrels(),
     metrics=[AP(rel=2)@1000, nDCG@10, RR(rel=2)@10, R(rel=2)@1000 ]
@@ -50,7 +50,7 @@ If you use this repository, please cite the paper:
 ```bibtex
 @inproceedings{wang2026plaidprf,
   title={PLAID-PRF: Pseudo-Relevance Feedback with Centroid-like Tokens in PLAID},
-  author={Wang, Xiao and Macdonald, Craig and Tonellotto, Nicola and Ounis, Iadh},
+  author={Wang, Xiao and MacAvaney, Sean and Macdonald, Craig},
   booktitle={Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
   year={2026}
 }
