@@ -26,7 +26,7 @@ if not pt.started():
     pt.java.init()
 
 dataset = pt.get_dataset("irds:msmarco-passage/trec-dl-2019/judged")
-res = pt.io.read_results("./dlhard/bm25.res.gz")
+res = pt.io.read_results("./PLAID-PRF/plaid_prf.dl19.res.gz")
 
 evalMeasuresDict = pt.Evaluate(
     res,
