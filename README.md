@@ -50,7 +50,7 @@ If you use this repository, please cite the paper:
 ```bibtex
 @inproceedings{wang2026plaidprf,
   title={PLAID-PRF: Pseudo-Relevance Feedback with Centroid-like Tokens in PLAID},
-  author={Wang, Xiao and Macdonald, Craig and Tonellotto, Nicola and Ounis, Iadh},
+  author={Wang, Xiao and MacAvaney, Sean and Macdonald, Craig},
   booktitle={Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
   year={2026}
 }
