@@ -49,10 +49,18 @@ If you use this repository, please cite the paper:
 
 ```bibtex
 @inproceedings{wang2026plaidprf,
-  title={PLAID-PRF: Pseudo-Relevance Feedback with Centroid-like Tokens in PLAID},
-  author={Wang, Xiao and MacAvaney, Sean and Macdonald, Craig},
-  booktitle={Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-  year={2026}
+  author    =   {Wang, Xiao and MacAvaney, Sean and Macdonald, Craig},
+  title     = {{PLAID-PRF} -- {Pseudo-Relevance Feedback with Centroid-like Tokens in PLAID}},
+  year      = {2026},
+  booktitle = {Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  series    = {SIGIR '26},
+  month     = jul,
+  numpages  = {12},
+  location  = {Melbourne, VIC, Australia},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3805712.3809690},
+  url       = {https://doi.org/10.1145/3805712.3809690}
 }
 ```
 
