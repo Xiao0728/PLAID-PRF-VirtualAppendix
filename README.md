@@ -8,7 +8,6 @@ In particular, this repository is intended to host:
 
 - result files for the main experimental benchmarks reported in the paper;
 - notebooks for reproducing the reported metrics;
-- auxiliary artifacts such as configuration files, index statistics, and optional analysis outputs.
 
 ---
 
