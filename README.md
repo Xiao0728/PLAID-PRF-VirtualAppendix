@@ -7,7 +7,7 @@ PLAID-PRF is a lightweight pseudo-relevance feedback (PRF) method for **quantise
 In particular, this repository is intended to host:
 
 - result files for the main experimental benchmarks reported in the paper;
-- notebooks for reproducing the reported metrics;
+- notebooks for reproducing the reported metrics.
 
 ---
 
